@@ -217,9 +217,6 @@ body {
 /**------------- Filter btn------------- */
 
 .filter-btn {
-
-    width: 116px;
-    height: 48px;
     box-sizing: border-box;
     flex-direction: row;
     display: flex;
