@@ -1,5 +1,8 @@
 :root {
-    --activ-title-color:#404BBF;
+    --bg-color:#ffffff;
+    --logo-color: #4D5AE5;
+    --footer-bg-color: #2E2F42;
+    --activ-title-color: #404BBF;
     --normal-title-color: #2E2F42;
     --activ-address-color: #404BBF;
     --normal-address-color: #434455;
@@ -11,7 +14,9 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    color: #2E2F42;
+    background-color: var(--bg-color);
+    color: #434455;
+    /* color: #2E2F42; */
 }
 
 .list {
@@ -25,11 +30,11 @@ body {
 /**-------------- HEADER------------------ */
 
 .header {
-    background-color: white;
+    background-color: var(--bg-color);
 }
 
 .header-logo {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
@@ -37,14 +42,15 @@ body {
     display: flex;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    color: var(--logo-color);
 }
 
 .header-logo-first {
-    color: #4D5AE5;
+    color: var(--logo-color);
 }
 
 .header-logo-last {
-    color: #2E2F42;
+    color: var(--normal-title-color);
 }
 
 .header-list {
@@ -90,17 +96,19 @@ body {
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
-    /* text-align: center; */
+    text-align: center;
     letter-spacing: 0.02em;
     color: #FFFFFF;
 }
 
 .hero-bottom-text {
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     background: #4D5AE5;
     color: #FFFFFF;
+    letter-spacing: 0.04em;
     cursor: pointer;
 }
 
@@ -120,6 +128,7 @@ body {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
+    text-align: center;
     letter-spacing: 0.02em;
     /* color: #2E2F42; */
 }
@@ -137,38 +146,48 @@ body {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
-    /* text-align: center; */
+    text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    /* color: #2E2F42; */
+    color: #2E2F42;
 }
 
 /**-------------- Team------------------ */
+
+.team {
+    background: #F4F4FD;
+} 
+
+.team-list {
+    background-color: #FFFFFF;
+}
 
 .team-head {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
-    /* text-align: center; */
+    text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    /* color: #2E2F42; */
+    color: #2E2F42;
 }
 
 .team-h {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
-    /* text-align: center; */
+    text-align: center;
     letter-spacing: 0.02em;
-    /* color: #2E2F42; */
+    /* background-color: #FFFFFF; */
+    color: #2E2F42;
 }
 
 .team-p {
     font-size: 16px;
     line-height: 1.5;
-    /* text-align: center; */
+    text-align: center;
     letter-spacing: 0.02em;
+    /* background-color: #FFFFFF; */
     color: #434455;
 }
 
@@ -196,6 +215,7 @@ body {
 /**------------- Filter btn------------- */
 
 .filter-btn {
+
     width: 116px;
     height: 48px;
     box-sizing: border-box;
@@ -211,10 +231,10 @@ body {
     flex-grow: 0;
 
     cursor: pointer;
-
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.5px;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.04em;
     color: var(--first-btn-color);
@@ -229,34 +249,34 @@ body {
 
 /**-------------- Footer------------------ */
 
-.Footer {
-    background: #2E2F42;
+.footer {
+    background-color: var(--footer-bg-color);
 }
 
-.Footer-logo {
-    font-family: 'Raleway';
+.footer-logo {
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.17;
     display: flex;
-    align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    color: var(--logo-color);
 }
 
-.Footer-logo-first {
-    color: #4D5AE5;
+.footer-logo-first {
+    color: var(--logo-color);
 }
 
-.Footer-logo-last {
-    color: #F4F4FD;
+.footer-logo-last {
+    color: var(--first-btn-bg-color);
 }
 
-.Footer-title {
+.footer-title {
     font-size: 16px;
     line-height: 1.5;
-    /* text-align: center; */
+    text-align: center;
     letter-spacing: 0.02em;
     color: #F4F4FD;
 }
