@@ -40,7 +40,6 @@ body {
     font-weight: 800;
     font-size: 18px;
     line-height: 1.17;
-    display: flex;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--logo-color);
@@ -179,7 +178,6 @@ body {
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.02em;
-    /* background-color: #FFFFFF; */
     color: var(--normal-title-color);
 }
 
@@ -188,7 +186,6 @@ body {
     line-height: 1.5;
     text-align: center;
     letter-spacing: 0.02em;
-    /* background-color: #FFFFFF; */
     color: var(--basic-color);
 }
 
@@ -217,17 +214,17 @@ body {
 /**------------- Filter btn------------- */
 
 .filter-btn {
-    box-sizing: border-box;
+    /* box-sizing: border-box;
     flex-direction: row;
     display: flex;
-    align-items: center;
+    align-items: center; */
     justify-content: center;
     background: var(--first-btn-bg-color);
-    border: 1px solid #E7E9FC;
+    /* border: 1px solid #E7E9FC;
     border-radius: 4px;
     flex: none;
     order: 1;
-    flex-grow: 0;
+    flex-grow: 0; */
 
     cursor: pointer;
     font-family: "Roboto", sans-serif;
@@ -258,7 +255,6 @@ body {
     font-weight: 800;
     font-size: 18px;
     line-height: 1.17;
-    display: flex;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--logo-color);
