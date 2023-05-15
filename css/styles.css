@@ -10,12 +10,13 @@
     --second-btn-bg-color: #404BBF;
     --first-btn-color: #4D5AE5;
     --second-btn-color: #ffffff;
+    --basic-color: #434455;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     background-color: var(--bg-color);
-    color: #434455;
+    color: var(--basic-color);
     /* color: #2E2F42; */
 }
 
@@ -130,14 +131,14 @@ body {
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.02em;
-    /* color: #2E2F42; */
+    color: var(--normal-title-color);
 }
 
 .feature-item {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--basic-color);
 }
 
 /**-------------- IMG------------------ */
@@ -149,7 +150,7 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    color: #2E2F42;
+    color: var(--normal-title-color);
 }
 
 /**-------------- Team------------------ */
@@ -169,7 +170,7 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    color: #2E2F42;
+    color: var(--normal-title-color);
 }
 
 .team-h {
@@ -179,7 +180,7 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     /* background-color: #FFFFFF; */
-    color: #2E2F42;
+    color: var(--normal-title-color);
 }
 
 .team-p {
@@ -188,13 +189,14 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     /* background-color: #FFFFFF; */
-    color: #434455;
+    color: var(--basic-color);
 }
 
 /**------------- Project card------------- */
 
 .card-list {
-    color: #2E2F42;
+    color: var(--normal-title-color);
+    text-decoration: none
 }
 
 .card-list-h {
@@ -202,14 +204,14 @@ body {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    /* color: #2E2F42; */
+    color: var(--normal-title-color);
 }
 
 .card-p {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--basic-color);
 }
 
 /**------------- Filter btn------------- */
