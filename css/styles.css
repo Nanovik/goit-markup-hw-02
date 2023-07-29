@@ -1,38 +1,41 @@
 :root {
-    --bg-color:#ffffff;
-    --logo-color: #4D5AE5;
-    --footer-bg-color: #2E2F42;
-    --activ-title-color: #404BBF;
-    --normal-title-color: #2E2F42;
-    --activ-address-color: #404BBF;
-    --normal-address-color: #434455;
-    --first-btn-bg-color: #F4F4FD;
-    --second-btn-bg-color: #404BBF;
-    --first-btn-color: #4D5AE5;
-    --second-btn-color: #ffffff;
-    --basic-color: #434455;
+    --primary-brand: #4D5AE5;
+    --pressed-state: #404BBF;
+    --dark: #2E2F42;
+    --success: #31D0AA;
+    --text: #434455;
+    --subtle-text: #8E8F99;
+    --accent: #E7E9FC;
+    --light: #F4F4FD;
+    --modal-overlay: #ABACB3;
+    --hero-background: #6D6D7B;
+    --white-background: #FFFFFF;
+    --modal-background: #FCFCFC;
+    --primaty-font: 'Roboto', sans-serif;
 }
 
-
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: var(--bg-color);
-    color: var(--basic-color);
-    /* color: #2E2F42; */
+    font-family: var(--primaty-font);
+    background-color: var(--white-background);
+    color: var(--text);
 }
 
 .list {
-    list-style: none;
+    list-style-type: none;
 }
 
 .link {
     text-decoration: none;
 }
 
+button {
+    cursor: pointer;
+}
+
 /**-------------- HEADER------------------ */
 
 .header {
-    background-color: var(--bg-color);
+
 }
 
 .header-logo {
@@ -43,19 +46,11 @@ body {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--logo-color);
-}
-
-.header-logo-first {
-    color: var(--logo-color);
+    color: var(--primary-brand);
 }
 
 .header-logo-last {
-    color: var(--normal-title-color);
-}
-
-.header-list {
-    color: var(--normal-title-color);
+    color: var(--dark);
 }
 
 .header-list-item {
@@ -63,34 +58,31 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--normal-title-color);
+    color: var(--dark);
 }
 
 .header-list-item:hover,
 .header-list-item:focus {
-    color: #404BBF;
+    color: var(--pressed-state);
 }
 
 .header-address {
-    font-family: 'Roboto';
     font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--normal-address-color);
+    color: var(--text);
 }
 
 .header-address:hover,
 .header-address:focus {
-    color: #404BBF;
+    color: var(--pressed-state);
 }
 
 /**-------------- HERO------------------ */
 
 .hero {
-    background: #2E2F42;
-    /* text-decoration: none; */
+    background: var(--dark);
 }
 
 .hero-title {
@@ -99,31 +91,24 @@ body {
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
-    color: #FFFFFF;
+    color: var(--white-background);
 }
 
 .hero-bottom-text {
-    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    background: #4D5AE5;
-    color: #FFFFFF;
+    background: var(--primary-brand);
+    color: var(--white-background);
     letter-spacing: 0.04em;
-    cursor: pointer;
 }
 
 .hero-bottom-text:hover,
 .hero-bottom-text:focus {
-    background: #404BBF;
-    color: #FFFFFF;
+    background: var(--pressed-state);
 }
 
 /**-------------- Feature--------------- */
-
-/* .feature-list {
-    color: #2E2F42;
-} */
 
 .feature-list-head {
     font-weight: 500;
@@ -131,14 +116,14 @@ body {
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.02em;
-    color: var(--normal-title-color);
+    color: var(--dark);
 }
 
 .feature-item {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--basic-color);
+    color: var(--text);
 }
 
 /**-------------- IMG------------------ */
@@ -150,17 +135,13 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    color: var(--normal-title-color);
+    color: var(--dark);
 }
 
 /**-------------- Team------------------ */
 
 .team {
-    background: #F4F4FD;
-} 
-
-.team-list {
-    background-color: #FFFFFF;
+    background: var(--light);
 }
 
 .team-head {
@@ -170,7 +151,11 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    color: var(--normal-title-color);
+    color: var(--dark);
+}
+
+.team-list {
+    background-color: var(--white-background);
 }
 
 .team-h {
@@ -179,7 +164,7 @@ body {
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.02em;
-    color: var(--normal-title-color);
+    color: var(--dark);
 }
 
 .team-p {
@@ -187,67 +172,13 @@ body {
     line-height: 1.5;
     text-align: center;
     letter-spacing: 0.02em;
-    color: var(--basic-color);
-}
-
-/**------------- Project card------------- */
-
-.card-list {
-    color: var(--normal-title-color);
-    text-decoration: none
-}
-
-.card-list-h {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: var(--normal-title-color);
-}
-
-.card-list-p {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--basic-color);
-}
-
-/**------------- Filter btn------------- */
-
-.filter-btn {
-    /* box-sizing: border-box;
-    flex-direction: row;
-    display: flex;
-    align-items: center; */
-    justify-content: center;
-    background: var(--first-btn-bg-color);
-    /* border: 1px solid #E7E9FC;
-    border-radius: 4px;
-    flex: none;
-    order: 1;
-    flex-grow: 0; */
-
-    cursor: pointer;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: center;
-    letter-spacing: 0.04em;
-    color: var(--first-btn-color);
-}
-
-.filter-btn:hover,
-.filter-btn:focus {
-    background-color: var(--second-btn-bg-color);
-    color: var(--second-btn-color);
-
+    color: var(--text);
 }
 
 /**-------------- Footer------------------ */
 
 .footer {
-    background-color: var(--footer-bg-color);
+    background-color: var(--dark);
 }
 
 .footer-logo {
@@ -258,21 +189,57 @@ body {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--logo-color);
-}
-
-.footer-logo-first {
-    color: var(--logo-color);
+    color: var(--primary-brand);
 }
 
 .footer-logo-last {
-    color: var(--first-btn-bg-color);
+    color: var(--light);
 }
 
 .footer-title {
     font-size: 16px;
     line-height: 1.5;
-    text-align: center;
+    /* text-align: center; */
     letter-spacing: 0.02em;
-    color: #F4F4FD;
+    color: var(--light);
+}
+
+/**============== Portfolio ============= */
+
+/**------------- Filter btn------------- */
+
+.filter-btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: var(--primary-brand);
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+    background-color: var(--pressed-state);
+    color: var(--white-background);
+}
+
+/**------------- Project card------------- */
+
+.card-list {
+    text-decoration: none
+}
+
+.card-list-h {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--dark);
+}
+
+.card-list-p {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text);
 }
